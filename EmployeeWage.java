@@ -9,7 +9,7 @@ public class EmployeeWage {
 	int dayinMonth=20;
 	int maxWorkingHour=100;
 	int totalWage=0;
-	for(int day=0; day<dayinMonth ; day++) {
+	for(int day=0; day<dayinMonth && totalWorkingHour<maxWorkingHour; day++) {
 		int presentAbsent= (int)(Math.floor(Math.random() * 10)) % 3;
 		switch(presentAbsent) {
 		case 1:
